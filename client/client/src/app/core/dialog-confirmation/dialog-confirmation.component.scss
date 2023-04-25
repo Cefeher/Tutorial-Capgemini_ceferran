@@ -1,0 +1,23 @@
+.container {
+    min-width: 350px;
+    max-width: 500px;
+    width: 100%;
+    padding: 5px;
+    
+
+
+    .description {
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+
+    .buttons {
+        text-align: right;
+        margin-right: 10px;
+
+
+        button {
+            margin-left: 10px;
+        }
+    }
+}

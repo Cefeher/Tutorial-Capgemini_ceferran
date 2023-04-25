@@ -1,0 +1,18 @@
+<mat-card>
+    <div class="register-header">
+        <h1>Registro de usuario</h1>
+        <img src="assets/avatar.png" alt="Avatar">
+    </div>
+    <mat-card-content>
+        <mat-form-field>
+            <input matInput placeholder="Nombre de usuario" [(ngModel)]="username">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="password" placeholder="Contraseña" [(ngModel)]="password">
+        </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+        <button *ngIf="!isLoggedIn" mat-raised-button color="primary" (click)="onAccept()">Ingresar</button>
+        <button mat-raised-button (click)="onCancel()">Salir</button>
+    </mat-card-actions>
+</mat-card>
